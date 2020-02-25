@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow animation="property: position; to: -1 4 -3; dur: 3500; easing: linear; loop:true; dir: alternate"></a-box>
+
+        <a-box position="-2 2.5 -3" rotation="0 0 0" color="#aabbcc" shadow animation="property: rotation; to: 0 360 0; dur: 3500; easing: linear; loop:true; dir: alternate"></a-box>
+<a-box position="0 2.5 -3" rotation="0 60 0" color="#ffbbcc" shadow animation="property:  scale; from: 0 0 0; to: 1 1 1; dur: 3500; easing: linear; loop:true; dir: alternate"></a-box>
+
+   <a-box color="#359595" position="0 0.5 -3" shadow="cast: true" animation="property: position; to: 0 3 -3; dur: 2500; loop:true; dir: alternate" animation__rotation="property:rotation; to:60 360 60; loop: true; dur: 2500"
+   animation__scale="property:scale; from: 0 0 0; to: 1 1 1; dur: 2500; loop:true; easing: linear; dir: alternate"> </a-box>
+    </a-scene>
+</body>
+</html>
